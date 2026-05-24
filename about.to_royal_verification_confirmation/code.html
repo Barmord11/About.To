@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Royal Verification | About.To</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=JetBrains+Mono:wght@400;700&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container-high": "#282a30",
+                    "primary-container": "#b76dff",
+                    "on-tertiary-fixed-variant": "#653e00",
+                    "on-surface": "#e2e2eb",
+                    "tertiary-container": "#ca8100",
+                    "secondary": "#4edea3",
+                    "on-tertiary-container": "#3e2400",
+                    "on-surface-variant": "#cfc2d6",
+                    "on-error": "#690005",
+                    "surface": "#111319",
+                    "inverse-primary": "#842bd2",
+                    "error-container": "#93000a",
+                    "on-tertiary": "#472a00",
+                    "surface-bright": "#373940",
+                    "secondary-fixed-dim": "#4edea3",
+                    "on-secondary": "#003824",
+                    "surface-variant": "#33343b",
+                    "surface-container-highest": "#33343b",
+                    "tertiary": "#ffb95f",
+                    "primary-fixed": "#f0dbff",
+                    "on-error-container": "#ffdad6",
+                    "error": "#ffb4ab",
+                    "tertiary-fixed-dim": "#ffb95f",
+                    "primary-fixed-dim": "#ddb7ff",
+                    "outline-variant": "#4d4354",
+                    "on-secondary-container": "#00311f",
+                    "outline": "#988d9f",
+                    "on-background": "#e2e2eb",
+                    "secondary-fixed": "#6ffbbe",
+                    "on-secondary-fixed": "#002113",
+                    "surface-dim": "#111319",
+                    "secondary-container": "#00a572",
+                    "inverse-on-surface": "#2e3037",
+                    "tertiary-fixed": "#ffddb8",
+                    "surface-container": "#1e1f26",
+                    "on-primary-container": "#400071",
+                    "surface-container-low": "#191b22",
+                    "inverse-surface": "#e2e2eb",
+                    "on-primary-fixed-variant": "#6900b3",
+                    "on-secondary-fixed-variant": "#005236",
+                    "background": "#111319",
+                    "surface-tint": "#ddb7ff",
+                    "on-tertiary-fixed": "#2a1700",
+                    "primary": "#ddb7ff",
+                    "on-primary": "#490080",
+                    "surface-container-lowest": "#0c0e14",
+                    "on-primary-fixed": "#2c0051"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-mobile": "16px",
+                    "gutter": "16px",
+                    "container-max": "1440px",
+                    "unit": "4px",
+                    "margin-desktop": "32px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-lg": ["Inter"],
+                    "body-md": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "display-hero": ["Inter"],
+                    "code-data": ["JetBrains Mono"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.05em", "fontWeight": "700"}],
+                    "headline-lg": ["32px", {"lineHeight": "1.2", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "display-hero": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "code-data": ["14px", {"lineHeight": "1.5", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      .royal-crest-glow {
+        box-shadow: 0 0 50px rgba(183, 109, 255, 0.25), 0 0 100px rgba(78, 222, 163, 0.1);
+        background: radial-gradient(circle at center, rgba(183, 109, 255, 0.15) 0%, transparent 70%);
+      }
+      .ornate-border {
+        border-image: linear-gradient(to bottom right, #ffddb8, #b76dff, #4edea3) 1;
+        border-width: 1px;
+      }
+      .card-portrait {
+        clip-path: polygon(50% 0%, 100% 15%, 100% 100%, 0 100%, 0 15%);
+      }
+      .decree-bg {
+        background-image: 
+          radial-gradient(at 0% 0%, rgba(183, 109, 255, 0.05) 0, transparent 50%),
+          radial-gradient(at 100% 100%, rgba(78, 222, 163, 0.05) 0, transparent 50%);
+      }
+      .truth-seal {
+        background: conic-gradient(from 0deg, #ffb95f, #b76dff, #4edea3, #ffb95f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      .obsidian-glass {
+        background: rgba(17, 19, 25, 0.7);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+      }
+      ::-webkit-scrollbar { width: 4px; }
+      ::-webkit-scrollbar-track { background: #0c0e14; }
+      ::-webkit-scrollbar-thumb { background: #33343b; }
+    </style>
+<style>
+    body { min-height: 100dvh; }
+  </style>
+</head>
+<body class="bg-background text-on-background font-body-md selection:bg-primary/30 decree-bg">
+<!-- TopAppBar -->
+<nav class="bg-surface-container-lowest/80 backdrop-blur-xl border-b border-outline-variant/20 sticky top-0 z-50 flex justify-between items-center px-margin-mobile md:px-margin-desktop h-16 w-full">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full border border-tertiary flex items-center justify-center">
+<span class="material-symbols-outlined text-tertiary text-lg" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+<span class="font-display-hero text-headline-md tracking-tighter text-on-surface">About.To</span>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all" href="#">Kingdom</a>
+<a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all" href="#">Archives</a>
+<a class="font-label-caps text-label-caps text-primary font-bold transition-all" href="#">Royal Heroes</a>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-full bg-primary-container/20 border border-primary/30 flex items-center justify-center text-primary font-bold text-[12px]">TR</div>
+</div>
+</nav>
+<main class="max-w-container-max mx-auto flex h-[calc(100vh-64px)] overflow-hidden">
+<!-- Left Sidebar: Royal Verifiers (Character Cards) -->
+<aside class="hidden lg:flex w-[320px] flex-col border-r border-outline-variant/20 bg-surface-container-lowest">
+<div class="p-8">
+<h3 class="font-label-caps text-label-caps text-tertiary mb-1">VERIFICATION COUNCIL</h3>
+<p class="text-[10px] font-code-data opacity-40 uppercase tracking-widest">Elders of the Truth Shard</p>
+</div>
+<div class="flex-1 overflow-y-auto px-6 space-y-6 pb-8">
+<!-- Royal Verifier Card 1 -->
+<div class="group relative">
+<div class="absolute -inset-0.5 bg-gradient-to-b from-tertiary/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+<div class="relative bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col gap-4">
+<div class="h-32 w-full bg-surface-container-high rounded-lg overflow-hidden relative border border-outline-variant/20">
+<img alt="Verifier Portrait" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYXS1SCEnA7NcFTTnQfxRU37Kfjtof4wIEece4Q1BuJxjuRyYINPeyJh2gtVWp-u7cI6W8siTzRD8hLyIsxzmxl_kuYhvtJYEEfe6tUV1BLOsC7rVlSNF-3Mf9pADZU9wUr7PJwRuZusnXhhtw_yS2w4pNlP9dbaOflesfm6oEML-bgbPWZyiKRyAs0jG95R088Qi-J3bacgn1aqh1bQqIyItd8OFCMQZkm8Sbeho61wddafJwJy8k9iCYq47vwWaxEGe6So3VWV1j"/>
+<div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] font-label-caps text-tertiary">LVL 99 ARCHIVIST</span>
+</div>
+</div>
+<div>
+<p class="font-headline-md text-sm text-on-surface">The Grand Lorekeeper</p>
+<p class="text-[11px] font-code-data text-on-surface-variant opacity-60 italic">"Custodian of the Primal Block"</p>
+</div>
+</div>
+</div>
+<!-- Royal Verifier Card 2 -->
+<div class="group relative">
+<div class="absolute -inset-0.5 bg-gradient-to-b from-secondary/50 to-transparent opacity-0 group-hover:opacity-100 transition duration-500 rounded-xl"></div>
+<div class="relative bg-surface-container-low p-4 rounded-xl border border-outline-variant/30 flex flex-col gap-4">
+<div class="h-32 w-full bg-surface-container-high rounded-lg overflow-hidden relative border border-outline-variant/20">
+<img alt="Verifier Portrait" class="w-full h-full object-cover opacity-60 grayscale group-hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANxWtTdjaImT3n4uaX344IveMsW9FGPkeCRtvdQKkeXjpDaSe5AuXjDuRZh3lIp5HcCymN0PBsVwgTAeNvikp8XWmEuQbsbt-yjw1REAg_58r7xFanFHhyIYmqx5V4rIhgETJ90LOL8OK5blDr8HuZwCNFa3rxBGKvQB1zzp9I5YL21HITQMrjcTQ7LQg_IRRGkKneQsih2-gwcAJSg_Gn7Y26dGuDK5iiS1ji9OCLxuJFXQH24OY0coEoxH15wMssbHE8s5RQyISR"/>
+<div class="absolute bottom-0 left-0 right-0 p-2 bg-gradient-to-t from-black/80 to-transparent">
+<span class="text-[10px] font-label-caps text-secondary">ORDINAL JUDGE</span>
+</div>
+</div>
+<div>
+<p class="font-headline-md text-sm text-on-surface">Truth Arbiter 099</p>
+<p class="text-[11px] font-code-data text-on-surface-variant opacity-60 italic">"Executor of High Consensus"</p>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Area: The Royal Decree -->
+<div class="flex-1 overflow-y-auto">
+<div class="px-margin-mobile md:px-margin-desktop py-12 flex flex-col items-center">
+<!-- Central Truth Crest -->
+<div class="relative mb-16 group">
+<div class="w-64 h-64 rounded-full border border-primary/20 royal-crest-glow flex items-center justify-center relative animate-[pulse_8s_infinite]">
+<div class="w-56 h-56 rounded-full border-4 border-double border-primary/40 flex items-center justify-center bg-black/40 backdrop-blur-md">
+<div class="text-center">
+<p class="font-label-caps text-[10px] text-primary tracking-[0.3em] mb-1">CONSENSUS</p>
+<p class="font-display-hero text-6xl truth-seal font-bold">98.4</p>
+<p class="font-code-data text-xs text-on-surface-variant mt-1">% ACCURACY</p>
+</div>
+</div>
+</div>
+<!-- Orbital Trust Seals -->
+<div class="absolute -top-4 -right-4 w-12 h-12 rounded-full obsidian-glass border border-secondary/50 flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-xl">verified</span>
+</div>
+</div>
+<!-- Decree Content -->
+<div class="max-w-3xl w-full text-center mb-16">
+<div class="flex justify-center items-center gap-4 mb-6">
+<div class="h-[1px] w-12 bg-gradient-to-r from-transparent to-outline-variant"></div>
+<span class="font-code-data text-[10px] tracking-[0.5em] text-outline uppercase">Official Decree #TR-4092</span>
+<div class="h-[1px] w-12 bg-gradient-to-l from-transparent to-outline-variant"></div>
+</div>
+<h1 class="font-headline-lg text-4xl md:text-5xl mb-6 text-on-surface leading-tight font-bold">Quantifying Global Decarbonization Rates</h1>
+<p class="text-lg text-on-surface-variant font-body-lg italic opacity-80 mb-12">"The Royal Verification Team hath spoken: your answer has been verified and secured within the 12% domain as of the third quarter of this era."</p>
+<!-- Legendary Stats Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+<div class="obsidian-glass p-6 rounded-2xl border-l border-t border-primary/30">
+<span class="material-symbols-outlined text-primary mb-3 text-3xl">hub</span>
+<p class="font-label-caps text-[10px] text-primary/70 mb-1 uppercase">Source Nodes</p>
+<p class="font-code-data text-2xl text-on-surface">1,422</p>
+</div>
+<div class="obsidian-glass p-6 rounded-2xl border-l border-t border-secondary/30">
+<span class="material-symbols-outlined text-secondary mb-3 text-3xl">fact_check</span>
+<p class="font-label-caps text-[10px] text-secondary/70 mb-1 uppercase">Logic Checks</p>
+<p class="font-code-data text-2xl text-on-surface">42,019</p>
+</div>
+<div class="obsidian-glass p-6 rounded-2xl border-l border-t border-tertiary/30">
+<span class="material-symbols-outlined text-tertiary mb-3 text-3xl">account_balance</span>
+<p class="font-label-caps text-[10px] text-tertiary/70 mb-1 uppercase">Epoch Age</p>
+<p class="font-code-data text-2xl text-on-surface">2y 4m</p>
+</div>
+</div>
+</div>
+<!-- Visual Verification Journey (Simplified) -->
+<div class="w-full max-w-4xl obsidian-glass rounded-3xl p-1 md:p-8 overflow-hidden relative">
+<div class="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5"></div>
+<div class="relative grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+<div class="p-6">
+<h3 class="font-headline-md text-xl mb-4">Verification Journey</h3>
+<div class="space-y-6">
+<div class="flex gap-4 items-start">
+<div class="w-6 h-6 rounded-full bg-primary/20 border border-primary/40 flex items-center justify-center mt-1 shrink-0">
+<div class="w-2 h-2 rounded-full bg-primary"></div>
+</div>
+<div>
+<p class="text-sm font-semibold text-on-surface">Data Ingestion</p>
+<p class="text-xs text-on-surface-variant opacity-70">Scrubbing 4k multi-vector streams</p>
+</div>
+</div>
+<div class="flex gap-4 items-start">
+<div class="w-6 h-6 rounded-full bg-secondary/20 border border-secondary/40 flex items-center justify-center mt-1 shrink-0">
+<div class="w-2 h-2 rounded-full bg-secondary"></div>
+</div>
+<div>
+<p class="text-sm font-semibold text-on-surface">Heuristic Logic</p>
+<p class="text-xs text-on-surface-variant opacity-70">Council comparative check passed</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative h-64 rounded-2xl overflow-hidden border border-outline-variant/20">
+<img alt="Analysis Visualization" class="absolute inset-0 w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALN6dk3PE9JD2kofs8t33-jl9gdbsX5IlQkGMw_GZhSJ4FNaPhnKfrHiVp1E3Pl-bfRCH09du3N7Y1riYgdCalbU_q0sV9Mgu1UtKKZmRrSiO4Lrnle7YeXL73KMV0WIg5TNSd1t0p2WguMbYop9AtvaCX5gna4J3Vo140Gll1SnjrBdsJtSQReToAclqYM3NFbrillwL6n-qaWajrwpBbKOv1tQJfdt2NYnDCC3gda3axtStN7_XGQKvn5mb7YMAsiqdicOV-UHQV"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-black/60 backdrop-blur-md p-3 rounded-lg border border-white/10">
+<p class="font-label-caps text-[9px] text-primary mb-1">TRUST MAPPING V.4</p>
+<div class="flex items-center gap-2">
+<div class="flex-1 h-1 bg-white/10 rounded-full overflow-hidden">
+<div class="h-full bg-primary w-[92%]"></div>
+</div>
+<span class="text-[10px] font-code-data">92%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="py-12"></div>
+</div>
+</div>
+<!-- Right Sidebar: Ledger Proof -->
+<aside class="hidden xl:flex w-[320px] flex-col border-l border-outline-variant/20 bg-surface-container-lowest">
+<div class="p-8">
+<h3 class="font-label-caps text-label-caps text-outline mb-6">ETERNAL LEDGER</h3>
+<div class="space-y-6">
+<div class="obsidian-glass p-4 rounded-xl border border-primary/20">
+<p class="text-[10px] font-label-caps text-primary mb-2">IMMUTABLE PROOF</p>
+<div class="font-code-data text-[11px] text-on-surface-variant break-all space-y-1">
+<p class="text-on-surface">BLOCK: 18,402,931</p>
+<p class="opacity-40">HASH: 0x72a...f4e2</p>
+</div>
+<button class="mt-4 w-full py-2 bg-primary/10 hover:bg-primary/20 border border-primary/30 rounded text-[10px] font-bold text-primary transition-all">
+VIEW ON EXPLORER
+</button>
+</div>
+<div>
+<h4 class="font-label-caps text-[10px] text-outline mb-4">CITATIONS</h4>
+<div class="space-y-3">
+<div class="p-3 bg-white/5 rounded-lg border-l-2 border-primary group cursor-pointer hover:bg-white/10 transition-colors">
+<p class="text-[11px] font-semibold">International Aviation Auth.</p>
+<p class="text-[9px] opacity-60">"Q3 Sector Synthesis Report"</p>
+</div>
+<div class="p-3 bg-white/5 rounded-lg border-l-2 border-secondary group cursor-pointer hover:bg-white/10 transition-colors">
+<p class="text-[11px] font-semibold">GreenFuel Consortium</p>
+<p class="text-[9px] opacity-60">"Distribution Metadata v2.1"</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</aside>
+</main>
+<!-- Mobile Navigation -->
+<div class="md:hidden">
+<nav class="bg-surface-dim/95 backdrop-blur-xl border-t border-outline-variant/20 fixed bottom-0 left-0 w-full flex justify-around items-center h-20 z-50">
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined">castle</span>
+<span class="font-label-caps text-[9px] mt-1">Kingdom</span>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="font-label-caps text-[9px] mt-1">Archives</span>
+</button>
+<button class="flex flex-col items-center justify-center text-primary">
+<div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center border border-primary/30">
+<span class="material-symbols-outlined">shield_with_heart</span>
+</div>
+</button>
+<button class="flex flex-col items-center justify-center text-on-surface-variant hover:text-primary transition-all">
+<span class="material-symbols-outlined">person</span>
+<span class="font-label-caps text-[9px] mt-1">Profile</span>
+</button>
+</nav>
+</div>
+</body></html>
