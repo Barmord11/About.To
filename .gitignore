@@ -6,3 +6,12 @@ dist
 !.env.example
 .gemini
 *.log
+
+# Mockups, Design Specs, and reference files
+about.to_*/
+obsidian_technical_noir/
+/chat-drag.png
+/chat-input.png
+/feed.png
+/halloffame.png
+/verification.png
