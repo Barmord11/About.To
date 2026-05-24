@@ -6,7 +6,7 @@ export default function HeroesPage() {
   const topThree = [
     {
       id: 1,
-      place: '01',
+      place: '1',
       badge: 'CHAMPION',
       name: 'Archon Valerius',
       points: '12,450 TRUTH POINTS',
@@ -23,7 +23,7 @@ export default function HeroesPage() {
     },
     {
       id: 2,
-      place: '02',
+      place: '2',
       badge: 'SILVER',
       name: 'Lady Consensus',
       points: '8,920 TRUTH POINTS',
@@ -40,7 +40,7 @@ export default function HeroesPage() {
     },
     {
       id: 3,
-      place: '03',
+      place: '3',
       badge: 'BRONZE',
       name: 'Synthesizer Kai',
       points: '7,810 TRUTH POINTS',
@@ -58,10 +58,10 @@ export default function HeroesPage() {
   ];
 
   const verifiers = [
-    { rank: '04', name: 'Oracle_Seven', title: 'MASTER OF LOGIC', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD8_Pim7-t7IKgWP4DZ_soZ3hI-wMDXlUpQsIEjfBZjAwMEfIMFqQivEwhtZ55MYnWU42F9mV7ZBGXl0u__XtNIYj6MiYbY0YWDMxNgF61bsT4bZHUhBhsno5sY2g327_gWk655V21aC54vxjF8ZTCzDtlgol7hDiXp4XVevryAr8bOJjNIckI4nrxxabb3RhKPbJF47bY_daYShD07Hsq2WpkgZcSmArLNj7MtmqVCGVsOozR1jB6lxzMfx9sCKuRPdNvijNU2DJot', change: 'up', changeVal: '+2', consensus: '98.5%' },
-    { rank: '05', name: 'DigitalScribe', title: 'ETHICS GUARDIAN', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBN6bA1sNov8iJwgDtj_XKJLPW-s5IjDWpKGoms2Rdl09DNEMAF1wLDv1JiUqIPdUTAJB90V3Cnj8PeFC_pKlPNUyo4KrUmrZko-aSQ5rsBA3Hl3sF_uUBFLnkrBfshBzKsaf8teTCKOxrv8q4Gbevrge3vnLgUihHXuWsmey2eSCBMdJIGbAzhr3fsKvF5HMNhtkZcXdJYToSSuMuCsP78UK4RqophQXtOHXYekKN0Lmya7sJJQTgDuO65Tq5C3PWVP6jgYQzZqQzS', change: 'down', changeVal: '-1', consensus: '97.9%' },
-    { rank: '06', name: 'Consensus_Queen', title: 'SIGNAL FINDER', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCApJ9rPNn-YyH9viJqhdLWczhmUDsrFEx_oiNsaF6zkxvPRiD-EifVYxNvYwgLH1b4E7kT_4xQJmG53TfSm-xJkSlHdb0DxWDiuKTcaW00dfMha8aRy4wdIdYsm5szThp0Y-v55tmPO-l4RZVeJC5Tfb48s1rOOu61HLwjYpKqWqZ8aQbjKckfdr-TKrnrinuw_Jwu-wVO9ATSBG4A9QP73E9emS2felxXuOgZ-iQVwrFLms1QdmT3dwhfCnEez0_yDkgNCO8vf8lj', change: 'same', changeVal: '—', consensus: '97.2%' },
-    { rank: '07', name: 'Nova_Truth', title: 'PATTERN SEEKER', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD8_Pim7-t7IKgWP4DZ_soZ3hI-wMDXlUpQsIEjfBZjAwMEfIMFqQivEwhtZ55MYnWU42F9mV7ZBGXl0u__XtNIYj6MiYbY0YWDMxNgF61bsT4bZHUhBhsno5sY2g327_gWk655V21aC54vxjF8ZTCzDtlgol7hDiXp4XVevryAr8bOJjNIckI4nrxxabb3RhKPbJF47bY_daYShD07Hsq2WpkgZcSmArLNj7MtmqVCGVsOozR1jB6lxzMfx9sCKuRPdNvijNU2DJot', change: 'up', changeVal: '+1', consensus: '96.8%' }
+    { rank: '4', name: 'Oracle_Seven', title: 'MASTER OF LOGIC', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD8_Pim7-t7IKgWP4DZ_soZ3hI-wMDXlUpQsIEjfBZjAwMEfIMFqQivEwhtZ55MYnWU42F9mV7ZBGXl0u__XtNIYj6MiYbY0YWDMxNgF61bsT4bZHUhBhsno5sY2g327_gWk655V21aC54vxjF8ZTCzDtlgol7hDiXp4XVevryAr8bOJjNIckI4nrxxabb3RhKPbJF47bY_daYShD07Hsq2WpkgZcSmArLNj7MtmqVCGVsOozR1jB6lxzMfx9sCKuRPdNvijNU2DJot', change: 'up', changeVal: '+2', consensus: '98.5%' },
+    { rank: '5', name: 'DigitalScribe', title: 'ETHICS GUARDIAN', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBN6bA1sNov8iJwgDtj_XKJLPW-s5IjDWpKGoms2Rdl09DNEMAF1wLDv1JiUqIPdUTAJB90V3Cnj8PeFC_pKlPNUyo4KrUmrZko-aSQ5rsBA3Hl3sF_uUBFLnkrBfshBzKsaf8teTCKOxrv8q4Gbevrge3vnLgUihHXuWsmey2eSCBMdJIGbAzhr3fsKvF5HMNhtkZcXdJYToSSuMuCsP78UK4RqophQXtOHXYekKN0Lmya7sJJQTgDuO65Tq5C3PWVP6jgYQzZqQzS', change: 'down', changeVal: '-1', consensus: '97.9%' },
+    { rank: '6', name: 'Consensus_Queen', title: 'SIGNAL FINDER', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCApJ9rPNn-YyH9viJqhdLWczhmUDsrFEx_oiNsaF6zkxvPRiD-EifVYxNvYwgLH1b4E7kT_4xQJmG53TfSm-xJkSlHdb0DxWDiuKTcaW00dfMha8aRy4wdIdYsm5szThp0Y-v55tmPO-l4RZVeJC5Tfb48s1rOOu61HLwjYpKqWqZ8aQbjKckfdr-TKrnrinuw_Jwu-wVO9ATSBG4A9QP73E9emS2felxXuOgZ-iQVwrFLms1QdmT3dwhfCnEez0_yDkgNCO8vf8lj', change: 'same', changeVal: '—', consensus: '97.2%' },
+    { rank: '7', name: 'Nova_Truth', title: 'PATTERN SEEKER', avatar: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD8_Pim7-t7IKgWP4DZ_soZ3hI-wMDXlUpQsIEjfBZjAwMEfIMFqQivEwhtZ55MYnWU42F9mV7ZBGXl0u__XtNIYj6MiYbY0YWDMxNgF61bsT4bZHUhBhsno5sY2g327_gWk655V21aC54vxjF8ZTCzDtlgol7hDiXp4XVevryAr8bOJjNIckI4nrxxabb3RhKPbJF47bY_daYShD07Hsq2WpkgZcSmArLNj7MtmqVCGVsOozR1jB6lxzMfx9sCKuRPdNvijNU2DJot', change: 'up', changeVal: '+1', consensus: '96.8%' }
   ];
 
   const filteredVerifiers = verifiers.filter(v => 

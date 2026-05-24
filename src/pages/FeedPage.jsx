@@ -11,18 +11,18 @@ export default function FeedPage() {
   };
 
   const initialLadder = [
-    { rank: '01', name: 'Lady Integrity', HP: '14.2k' },
-    { rank: '02', name: 'Sir Verifier', HP: '12.8k' },
-    { rank: '03', name: 'Baron Byte', HP: '9.1k' }
+    { rank: '1', name: 'Lady Integrity', HP: '14.2k' },
+    { rank: '2', name: 'Sir Verifier', HP: '12.8k' },
+    { rank: '3', name: 'Baron Byte', HP: '9.1k' }
   ];
 
   const extendedLadder = [
-    { rank: '01', name: 'Lady Integrity', HP: '14.2k' },
-    { rank: '02', name: 'Sir Verifier', HP: '12.8k' },
-    { rank: '03', name: 'Baron Byte', HP: '9.1k' },
-    { rank: '04', name: 'Oracle Scribe', HP: '8.4k' },
-    { rank: '05', name: 'Count Shard', HP: '7.9k' },
-    { rank: '06', name: 'High Archon', HP: '7.2k' }
+    { rank: '1', name: 'Lady Integrity', HP: '14.2k' },
+    { rank: '2', name: 'Sir Verifier', HP: '12.8k' },
+    { rank: '3', name: 'Baron Byte', HP: '9.1k' },
+    { rank: '4', name: 'Oracle Scribe', HP: '8.4k' },
+    { rank: '5', name: 'Count Shard', HP: '7.9k' },
+    { rank: '6', name: 'High Archon', HP: '7.2k' }
   ];
 
   const activeLadder = showFullLadder ? extendedLadder : initialLadder;
