@@ -102,3 +102,42 @@ body {
 .material-symbols-outlined {
   font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
+
+/* Gamified Card Shimmer/Shine Effect */
+.hover-shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.hover-shine::after {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -70%;
+  width: 25%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.05) 25%,
+    rgba(255, 255, 255, 0.25) 50%,
+    rgba(255, 255, 255, 0.05) 75%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  pointer-events: none;
+}
+
+.hover-shine:hover::after {
+  animation: shine-sweep 1s cubic-bezier(0.2, 0.6, 0.2, 1) forwards;
+}
+
+@keyframes shine-sweep {
+  0% {
+    left: -70%;
+  }
+  100% {
+    left: 130%;
+  }
+}
+
