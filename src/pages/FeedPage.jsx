@@ -263,7 +263,67 @@ export default function FeedPage() {
             </span>
           </div>
         </div>
+
+        {/* Statistics Card (Telemetry) */}
+        <div className="xl:col-span-12 glass-pane hover-shine rounded-lg p-5 md:p-6 relative group border border-white/5 overflow-hidden flex flex-col gap-4">
+          {/* Header */}
+          <div className="flex items-center justify-between border-b border-white/5 pb-3">
+            <h4 className="font-label-caps text-[10px] text-on-surface-variant/80 tracking-widest flex items-center gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-secondary amber-pulse"></span>
+              TRUTHFORGE NETWORK TELEMETRY
+            </h4>
+            <span className="font-code-data text-[9px] text-secondary/80 bg-secondary/5 border border-secondary/20 px-2 py-0.5 rounded font-bold uppercase tracking-wider">
+              REAL-TIME
+            </span>
+          </div>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+            {/* Metric 1: Inquiries Resolved */}
+            <div className="flex flex-col gap-2 bg-[#0c0e14]/50 p-4 rounded-lg border border-white/5">
+              <span className="font-label-caps text-[8px] text-on-surface-variant/50 tracking-wider font-bold">DAILY INQUIRIES RESOLVED</span>
+              <div className="flex items-baseline gap-1.5">
+                <span className="font-code-data text-2xl text-on-surface font-extrabold">5,039</span>
+                <span className="font-code-data text-xs text-on-surface-variant/40">/ 7,500</span>
+              </div>
+              {/* Progress bar */}
+              <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden mt-1">
+                <div className="h-full bg-gradient-to-r from-primary to-primary-container w-[67.2%] rounded-full shadow-[0_0_10px_rgba(221,183,255,0.2)]"></div>
+              </div>
+              <p className="font-body-md text-[10px] text-on-surface-variant/60 mt-1">67.2% of daily manifest quota cleared</p>
+            </div>
+
+            {/* Metric 2: Verified answers */}
+            <div className="flex flex-col gap-2 bg-[#0c0e14]/50 p-4 rounded-lg border border-white/5">
+              <span className="font-label-caps text-[8px] text-on-surface-variant/50 tracking-wider font-bold">CONSENSUS RATIO</span>
+              <div className="flex items-baseline gap-1.5">
+                <span className="font-code-data text-2xl text-secondary font-extrabold">75%</span>
+                <span className="font-code-data text-xs text-secondary/60">VERIFIED</span>
+              </div>
+              {/* Progress bar */}
+              <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden mt-1">
+                <div className="h-full bg-secondary w-[75%] rounded-full shadow-[0_0_10px_rgba(78,222,163,0.2)]"></div>
+              </div>
+              <p className="font-body-md text-[10px] text-on-surface-variant/60 mt-1">Direct consensus alignment achieved</p>
+            </div>
+
+            {/* Metric 3: Active Verifiers */}
+            <div className="flex flex-col gap-2 bg-[#0c0e14]/50 p-4 rounded-lg border border-white/5">
+              <span className="font-label-caps text-[8px] text-on-surface-variant/50 tracking-wider font-bold">CHAMBER TELEMETRY</span>
+              <div className="flex items-baseline gap-1.5">
+                <span className="font-code-data text-2xl text-tertiary font-extrabold">2,450</span>
+                <span className="font-code-data text-xs text-tertiary/60">ACTIVE</span>
+              </div>
+              {/* Progress bar */}
+              <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden mt-1">
+                <div className="h-full bg-tertiary w-[88%] rounded-full shadow-[0_0_10px_rgba(255,185,95,0.2)]"></div>
+              </div>
+              <p className="font-body-md text-[10px] text-on-surface-variant/60 mt-1">Active nodes verifying proofs</p>
+            </div>
+          </div>
+        </div>
       </div>
+
 
       {/* Floating Action Button (FAB) */}
       <button className="fixed bottom-24 right-6 w-12 h-12 md:bottom-16 md:right-8 md:w-14 md:h-14 xl:right-[340px] rounded-full bg-gradient-to-r from-primary to-[#b76dff] text-on-primary shadow-[0_4px_20px_rgba(221,183,255,0.35)] hover:shadow-[0_4px_25px_rgba(221,183,255,0.5)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center z-40 border border-primary/20">
