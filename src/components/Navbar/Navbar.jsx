@@ -76,8 +76,9 @@ export default function Navbar() {
             <img 
               alt="Profile" 
               className="w-10 h-10 rounded-full border border-primary/20 object-cover group-hover:border-primary/50 transition-colors"
-              src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8_Pim7-t7IKgWP4DZ_soZ3hI-wMDXlUpQsIEjfBZjAwMEfIMFqQivEwhtZ55MYnWU42F9mV7ZBGXl0u__XtNIYj6MiYbY0YWDMxNgF61bsT4bZHUhBhsno5sY2g327_gWk655V21aC54vxjF8ZTCzDtlgol7hDiXp4XVevryAr8bOJjNIckI4nrxxabb3RhKPbJF47bY_daYShD07Hsq2WpkgZcSmArLNj7MtmqVCGVsOozR1jB6lxzMfx9sCKuRPdNvijNU2DJot"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDa17alI_6dQjfUx5RLdB-e3TXaai80CxX0ljAFpzdKkK7aefxj0SbEoWTD8dXwX05QS37qL2cxuTrCO6D4llB5-4UnyPcpDwSQaBa1TxrUpUQYdJtLzNseLrxyXiSzt0c0CQi5pr6AURk6bbWmtei2ufgcPFomgi_UpN_qAlfBoqvRP5f-hhcNw2Z3nrGFt5C5QrOIrpOJSgSs3amObzhswqlM7VAPpvQeC5ah_GPeWvGMJ_eUzCXmPKhNJUPt2O942D1BmBd6u7u-"
             />
+
             {/* Online Indicator */}
             <span className="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-secondary border-2 border-surface-container-lowest amber-pulse"></span>
           </div>

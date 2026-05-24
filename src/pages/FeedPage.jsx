@@ -41,13 +41,13 @@ export default function FeedPage() {
       <div className="grid grid-cols-1 xl:grid-cols-12 gap-6">
         {/* Large Feature Card: Knowledge Post (Takes 8 cols of xl grid) */}
         <div className="xl:col-span-8 glass-pane rounded-lg p-5 md:p-6 flex flex-col gap-6">
-          <div className="flex flex-col sm:flex-row justify-between sm:items-start gap-4">
+          <div className="flex justify-between items-start gap-3">
             <div className="flex items-center gap-4">
               <div className="w-12 h-12 rounded-lg bg-tertiary/10 border border-tertiary/30 p-[2px] flex-shrink-0">
                 <img 
                   alt="Knowledge Oracle Avatar" 
                   className="w-full h-full object-cover rounded" 
-                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0Retp3CrXJSPF2rK2hOBt6wxdgZAwMRFKq4k54BSKVElNnz2JYv0z1eMtPhzTg3nEWrSI9FsMd2ewTS9mioPenfyvrJauuw2CIpyLgVAcHbg0yF8b7bqdh2TK1RQGmyPVRk4AEposcDs7M5qhjXYjMVvz015h8uBY-WR5qFDASqpugZJgml0i2gqPleE5unc9gC1_zrGjVPHYJjIi0H_9O-jUGzUPKKw18oTjam3sbZS3UiCOPnF7oMCQL-Cw3Rk60uUKCooafFKe"
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB0Retp3CrXJSPF2rK2hOBt6wxdgZAwMRFKq4k54BSKVElNnz2JYv0z1eMtPhzTg3nEWrSI9FsMd2ewTS9mioPenfyvrJauuw2CIpyLgVAcHbg0yF8b7bqdh2TK1RQGmyPVRk4AEposcDs7M5qhjXYjMVvz015h8uBY-WR5qFDASqpugZJgml0i2gqPleE5unc9gC1_zrGjVPHYJjIi0H_9O-jUGzUPKKw18oTjam3sbZS3UiCOPnF7oMCQL-Cw3Rk60uUKCooafFKe"
                 />
               </div>
               <div>
@@ -58,7 +58,7 @@ export default function FeedPage() {
                 <p className="font-code-data text-[10px] text-on-surface-variant/70 uppercase tracking-widest">Knowledge Pillar • 2h ago</p>
               </div>
             </div>
-            <span className="self-start sm:self-center font-label-caps text-tertiary border border-tertiary/40 px-3 py-1 rounded-full text-[9px] tracking-wider heroic-glow bg-tertiary/5 select-none">
+            <span className="font-label-caps text-tertiary border border-tertiary/40 px-3 py-1 rounded-full text-[9px] tracking-wider heroic-glow bg-tertiary/5 select-none flex-shrink-0">
               PRECISION VERIFIED
             </span>
           </div>
@@ -264,6 +264,11 @@ export default function FeedPage() {
           </div>
         </div>
       </div>
+
+      {/* Floating Action Button (FAB) */}
+      <button className="fixed bottom-24 right-6 w-12 h-12 md:bottom-16 md:right-8 md:w-14 md:h-14 xl:right-[340px] rounded-full bg-gradient-to-r from-primary to-[#b76dff] text-on-primary shadow-[0_4px_20px_rgba(221,183,255,0.35)] hover:shadow-[0_4px_25px_rgba(221,183,255,0.5)] hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center z-40 border border-primary/20">
+        <span className="material-symbols-outlined text-2xl md:text-3xl" style={{ fontVariationSettings: "'FILL' 1" }}>add_comment</span>
+      </button>
     </section>
   );
 }
